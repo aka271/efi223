@@ -1,5 +1,13 @@
 # Service Anfragen
 
+## TOC
+- [Service Anfragen](#service-anfragen)
+  - [TOC](#toc)
+  - [Statusmeldungen](#statusmeldungen)
+  - [Kundenanfragen](#kundenanfragen)
+  - [Störungsmeldungen](#störungsmeldungen)
+
+
 ## Statusmeldungen
 Statusmeldungen werden automatisch generiert und in verschiedene Kategorien unterteilt, um eine schnelle Einschätzung der aktuellen Systemlage zu ermöglichen:
 
