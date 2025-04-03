@@ -7,7 +7,7 @@
   - [Soziale Ziele](#soziale-ziele)
   - [Ökologische Ziele](#ökologische-ziele)
   - [Sachziele](#sachziele)
-  - [wirtschaftliche (ökonomische Ziele)](#wirtschaftliche-ökonomische-ziele)
+  - [wirtschaftliche (ökonomische) Ziele](#wirtschaftliche-ökonomische-ziele)
 
 ## Allgemein
 Unternehmensziele sind die langfristigen und kurzfristigen Zielsetzungen, die ein Unternehmen verfolgt. Sie lassen sich in vier Hauptkategorien unterteilen: **soziale Ziele**, **ökologische Ziele**, **Sachziele** und **wirtschaftliche (ökonomische) Ziele**
@@ -42,7 +42,7 @@ Sachziele betreffen die konkreten Leistungen und Produkte des Unternehmens:
 
 Beispiel: Ein Tech-Unternehmen forscht an einer neuen Softwarelösung, um Wettbewerbsvorteile zu erlangen.
 
-## wirtschaftliche (ökonomische Ziele)
+## wirtschaftliche (ökonomische) Ziele
 Diese Ziele sichern den finanziellen Erfolg und die Stabilität des Unternehmens:
 
 - Gewinnmaximierung: Steigerung der Profitabilität durch Kostenkontrolle oder Umsatzerhöhung.

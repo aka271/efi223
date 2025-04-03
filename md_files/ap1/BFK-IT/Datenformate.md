@@ -7,7 +7,7 @@
   - [CSV (Comma-Separated Values)](#csv-comma-separated-values)
     - [Eigenschaften](#eigenschaften)
     - [Vor-/Nachteile](#vor-nachteile)
-  - [JSON (JavaScript Object Notation)\\](#json-javascript-object-notation)
+  - [JSON (JavaScript Object Notation)](#json-javascript-object-notation)
     - [Eigenschaften](#eigenschaften-1)
     - [Vor-/Nachteile](#vor-nachteile-1)
   - [XML (Extensible Markup Language)](#xml-extensible-markup-language)
@@ -49,7 +49,7 @@ id,name,age,city
 ❌ Keine Metadaten/Schemadefinition\
 
 
-## JSON (JavaScript Object Notation)\
+## JSON (JavaScript Object Notation)
 ```json
 {
   "employees": [

@@ -142,7 +142,7 @@ The <span style="color: red;">SUM()</span> function returns the total sum of a n
 
 ### MIN/MAX
 The <span style="color: red;">MIN()</span> function returns the smallest value of the selected column.\
-The <span style="color: red;">MAX()</span> function returns the largest value of the selected column.
+
 
 > **Syntax MIN**
 > ```sql
@@ -151,6 +151,7 @@ The <span style="color: red;">MAX()</span> function returns the largest value of
 > WHERE condition;
 > ```
 
+The <span style="color: red;">MAX()</span> function returns the largest value of the selected column.
 > **Syntax MAX**
 > ```sql
 > SELECT MAX(column_name)
@@ -159,10 +160,135 @@ The <span style="color: red;">MAX()</span> function returns the largest value of
 > ```
 
 ## SQL SELECT LIKE, IN, BETWEEN
+### LIKE
+The <span style="color: red;">LIKE</style> operator is used in a WHERE clause to search for a specified pattern in a column.
+
+There are two wildcards often used in conjunction with the LIKE operator:
+- The percent sign % represents zero, one, or multiple characters
+- The underscore sign _ represents one, single character
+
+> **Syntax Like**
+> ```sql
+> SELECT column1, column2, ...
+> FROM table_name
+> WHERE columnN LIKE pattern; 
+> ```
+
+> **Example**
+> ```sql
+> SELECT * 
+> FROM Customers
+> WHERE CustomerName LIKE 'a%'; 
+> ```
+
+### IN
+The <span style="color: red;">IN</span> operator allows you to specify multiple values in a WHERE clause.
+
+The <span style="color: red;">IN</span> operator is a shorthand for multiple OR conditions.
+
+> **Syntax Like**
+> ```sql
+> SELECT column_name(s)
+> FROM table_name
+> WHERE column_name IN (value1, value2, ...);
+> ```
+
+> **Example**
+> ```sql
+> SELECT * FROM Customers
+> WHERE Country IN ('Germany', 'France', 'UK');
+> ```
+
+### BETWEEN
+The <span style="color: red;">BETWEEN</span> operator selects values within a given range. The values can be numbers, text, or dates.
+
+The <span style="color: red;">BETWEEN</span> operator is inclusive: begin and end values are included. 
+
+> **Syntax Like**
+> ```sql
+> SELECT column_name(s)
+> FROM table_name
+> WHERE column_name BETWEEN value1 AND value2;
+> ```
+
+> **Example**
+> ```sql
+> SELECT * FROM Products
+> WHERE Price BETWEEN 10 AND 20;
+> ```
+
 ## SQL INSERT INTO
+The <span style="color: red;">INSERT INTO</span> statement is used to insert new records in a table.
+
+> **Syntax Like**
+> ```sql
+> INSERT INTO table_name (column1, column2, column3, ...)
+> VALUES (value1, value2, value3, ...); 
+> ```
+
+> **Example**
+> ```sql
+> INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+> VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');
+> ```
+
 ## SQL UPDATE SET
+The <span color="color: red;">UPDATE<span> statement is used to modify the existing records in a table.
+
+> **Syntax Like**
+> ```sql
+> UPDATE table_name
+> SET column1 = value1, column2 = value2, ...
+> WHERE condition; 
+> ```
+
+> **Example**
+> ```sql
+> UPDATE Customers
+> SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+> WHERE CustomerID = 1;
+> ```
+
 ## SQL DELETE FROM
+The <span style="color: red;">DELETE</span> statement is used to delete existing records in a table.
+
+> **Syntax Like**
+> ```sql
+> DELETE FROM table_name WHERE condition;
+> ```
+
+> **Example**
+> ```sql
+> DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+> ```
+
 ## SQL CREATE TABLE
+The <span style="color: red;">CREATE DATABASE</span> statement is used to create a new SQL database.
+
+> **Syntax Like**
+> ```sql
+> CREATE DATABASE databasename; 
+> ```
+
+> **Example**
+> ```sql
+> CREATE DATABASE testDB;
+> ```
+
 ## SQL datatypes: INT, DOUBLE, VARCHAR, BOOLEAN
+|Data type|Description|
+|-|-|
+|VARCHAR(size)|A VARIABLE length string (can contain letters, numbers, and special characters). The size parameter specifies the maximum string length in characters - can be from 0 to 65535|
+|INT(size)| 	A medium integer. Signed range is from -2147483648 to 2147483647. Unsigned range is from 0 to 4294967295. The size parameter specifies the maximum display width (which is 255)|
+|BOOLEAN/BOOL|Zero is considered as false, nonzero values are considered as true. |
+|DOUBLE(size, d)| 	A normal-size floating point number. The total number of digits is specified in size. The number of digits after the decimal point is specified in the d parameter|
+
+
 ## SQL datatypes: DATE, TIMESTAMP
-## SQL Relationshipmodell
+|Data type|Description|
+|-|-|
+|DATE| 	A date. Format: YYYY-MM-DD. The supported range is from '1000-01-01' to '9999-12-31'|
+|TIMESTAMP(fsp)|A timestamp. TIMESTAMP values are stored as the number of seconds since the Unix epoch ('1970-01-01 00:00:00' UTC). Format: YYYY-MM-DD hh:mm:ss. The supported range is from '1970-01-01 00:00:01' UTC to '2038-01-09 03:14:07' UTC. Automatic initialization and updating to the current date and time can be specified using DEFAULT CURRENT_TIMESTAMP and ON UPDATE CURRENT_TIMESTAMP in the column definition|
+
+## SQL relationship model
+TODO
