@@ -275,6 +275,46 @@ The <span style="color: red;">CREATE DATABASE</span> statement is used to create
 > CREATE DATABASE testDB;
 > ```
 
+
+## SQL JOINs
+A <span style="color: red;">JOIN</span> clause is used to combine rows from two or more tables, based on a related column between them.
+
+> **Syntax Like**
+> ```sql
+> SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+> FROM Orders
+> INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+> ```
+
+### Different Types of SQL JOINs
+<span style="color: red;">(INNER) JOIN</span>: Returns records that have matching values in both tables\
+
+> **Syntax Like**
+> ```sql
+> SELECT ProductID, ProductName, CategoryName
+> FROM Products
+> INNER JOIN Categories ON Products.CategoryID = Categories.CategoryID;
+> ```
+
+<span style="color: red;">LEFT (OUTER) JOIN</span>: Returns all records from the left table, and the matched records from the right table\
+
+> **Syntax Like**
+> ```sql
+> SELECT Customers.CustomerName, Orders.OrderID
+> FROM Customers
+> LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+> ORDER BY Customers.CustomerName;
+> ```
+
+<span style="color: red;">RIGHT (OUTER) JOIN</span>: Returns all records from the right table, and the matched records from the left table\
+<span style="color: red;">FULL (OUTER) JOIN</span>: Returns all records when there is a match in either left or right table
+
+> **Example**
+> ```sql
+> CREATE DATABASE testDB;
+> ```
+
+
 ## SQL datatypes: INT, DOUBLE, VARCHAR, BOOLEAN
 |Data type|Description|
 |-|-|
